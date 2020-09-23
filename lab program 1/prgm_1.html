@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+
+
+<title>Lab calculator program</title>
+
+
+<style>
+
+
+.title{
+
+
+border-radius: 5px;
+
+
+margin-bottom: 50px;
+
+
+text-align: center;
+
+
+width: 300px;
+
+
+color:#ff4446;
+
+
+border:dashed green 2px;
+
+
+}
+
+
+input[type="button"]{
+
+
+border-radius: 10px;
+
+
+background-color: #ff4446;
+
+
+color:black;
+
+
+border-color: #ff4456;
+
+
+width:100%;
+
+
+}
+
+
+input[type="text"]{
+
+
+border-radius: 10px;
+
+
+text-align:right;
+
+
+border-color:black;
+
+
+background-color: white;
+
+
+width: 100%;
+
+
+
+
+
+
+}
+
+
+</style>
+
+
+<script>
+
+
+
+
+
+
+// create a function disp
+
+
+function disp(val){
+
+
+document.getElementById('sdm').value+=val;
+
+
+
+
+
+
+}
+
+
+// function to clear textbox
+
+
+function clr(){
+
+
+document.getElementById("sdm").value=" "
+
+
+}
+
+
+
+
+
+
+// function to solve the calulator problem
+
+
+function solve(){
+
+
+let x=document.getElementById('sdm').value;
+
+
+//alert(x);
+
+
+let y=eval(x);
+
+
+// alert(y);
+
+
+document.getElementById('sdm').value=y;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+</script>
+
+
+</head>
+
+
+<body><!-- comment-->
+
+
+<div class="title">SDM Javascript Program For Simple calulator</div>
+
+
+<table border="1">
+
+
+<tr>
+
+
+<td>
+
+
+<input type="button" value="C" onclick="clr()" />
+
+
+</td>
+
+
+<td colspan="3" >
+
+
+<input type="text" id="sdm"/>
+
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<!--Creating buttons and assigning values-->
+
+
+<td>
+
+
+<input type="button" value="+" onclick="disp('+')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="1" onclick="disp('1')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="2" onclick="disp('2')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="3" onclick="disp('3')"/>
+
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<td>
+
+
+<input type="button" value="-" onclick="disp('-')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="4" onclick="disp('4')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="5" onclick="disp('5')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="6" onclick="disp('6')"/>
+
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<td>
+
+
+<input type="button" value="*" onclick="disp('*')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="7" onclick="disp('7')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="8" onclick="disp('8')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="9" onclick="disp('9')"/>
+
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<td>
+
+
+<input type="button" value="/" onclick="disp('/')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="." onclick="disp('.')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="0" onclick="disp('0')"/>
+
+
+</td>
+
+
+<td>
+
+
+<input type="button" value="=" onclick="solve()"/>
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+<html>
+    <body>
+        <p> <b>Sharan Raj - 4SU17CS084</b></p>     
+    </body>
+</html>
+
